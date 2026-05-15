@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-05-15T23:00:30+08:00",
+  "generatedAt": "2026-05-16T00:55:08+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -36,9 +36,9 @@ window.PRICE_DATA = {
       "unitRows": 7
     },
     {
-      "provider": "<lambda>",
-      "status": "ERROR: The read operation timed out",
-      "tokenRows": 0,
+      "provider": "月之暗面 Kimi",
+      "status": "homepage-current-models",
+      "tokenRows": 3,
       "unitRows": 0
     },
     {
@@ -272,6 +272,66 @@ window.PRICE_DATA = {
         "缓存"
       ],
       "confidence": "official-table"
+    },
+    {
+      "id": "kimi-api-kimi-k2-4-0-16-0-none-fc4300764efb",
+      "provider": "月之暗面 Kimi",
+      "platform": "官方 API",
+      "model": "kimi-k2",
+      "category": "文本/视觉/推理",
+      "currency": "CNY",
+      "input": 4.0,
+      "output": 16.0,
+      "condition": "官方首页最新模型价格",
+      "context": "256K/128K K2 series",
+      "status": "官方收录",
+      "sourceUrl": "https://platform.kimi.com/",
+      "notes": "",
+      "tags": [
+        "官方 API",
+        "缓存"
+      ],
+      "confidence": "official-homepage"
+    },
+    {
+      "id": "kimi-api-kimi-k2-5-4-0-21-0-none-d277f7ecc68d",
+      "provider": "月之暗面 Kimi",
+      "platform": "官方 API",
+      "model": "kimi-k2.5",
+      "category": "文本/视觉/推理",
+      "currency": "CNY",
+      "input": 4.0,
+      "output": 21.0,
+      "condition": "官方首页最新模型价格",
+      "context": "256K",
+      "status": "官方收录",
+      "sourceUrl": "https://platform.kimi.com/",
+      "notes": "",
+      "tags": [
+        "官方 API",
+        "缓存"
+      ],
+      "confidence": "official-homepage"
+    },
+    {
+      "id": "kimi-api-kimi-k2-6-6-5-27-0-none-442038935fc1",
+      "provider": "月之暗面 Kimi",
+      "platform": "官方 API",
+      "model": "kimi-k2.6",
+      "category": "文本/视觉/推理",
+      "currency": "CNY",
+      "input": 6.5,
+      "output": 27.0,
+      "condition": "官方首页最新模型价格",
+      "context": "256K",
+      "status": "官方收录",
+      "sourceUrl": "https://platform.kimi.com/",
+      "notes": "",
+      "tags": [
+        "官方 API",
+        "缓存"
+      ],
+      "confidence": "official-homepage"
     },
     {
       "id": "api-deepseek-ocr-0-3-1-2-none-77a64f9eab59",
