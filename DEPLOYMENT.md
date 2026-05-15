@@ -9,10 +9,9 @@
 1. 在 GitHub 新建公开仓库。
 2. 把本项目推送到仓库默认分支。
 3. 打开仓库 `Settings -> Pages`。
-4. Source 选择 `Deploy from a branch`。
-5. Branch 选择 `main` 或 `master`，目录选择 `/ (root)`。
-6. 保存后等待 Pages 生成公开 URL。
-7. 打开 `Actions`，确认 `Update model prices` 工作流处于启用状态。
+4. Source 选择 `GitHub Actions`。
+5. 推送后等待 `Deploy static site` 工作流生成公开 URL。
+6. 打开 `Actions`，确认 `Update model prices` 工作流处于启用状态。
 
 优点：免费、部署简单、和定时采集在同一个仓库里。
 
