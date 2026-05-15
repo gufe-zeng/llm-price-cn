@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>国内大模型价格对比</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#">
+          <span class="brand-mark" aria-hidden="true">¥</span>
+          <span>LLM Price CN</span>
+        </a>
+        <div class="actions">
+          <a class="link-button" href="data/prices.js" target="_blank" rel="noreferrer">数据源</a>
+          <a class="link-button" href="DEPLOYMENT.md" target="_blank" rel="noreferrer">部署</a>
+          <a class="link-button primary" href="#calculator">费用估算</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">官方价格自动监控</span>
+          <h1>国内大模型 API 价格对比</h1>
+          <p>聚合官方直连、云平台和模型服务商报价，按输入、输出、缓存命中和套餐口径统一换算，适合公开部署成可访问的网站。</p>
+          <div class="hero-meta">
+            <span id="generatedAt">正在载入价格数据</span>
+            <span id="reviewCount">-</span>
+          </div>
+        </div>
+        <div class="monitor-card" aria-label="监控状态">
+          <div>
+            <span>监控策略</span>
+            <strong>30 分钟轮询</strong>
+          </div>
+          <div>
+            <span>发布方式</span>
+            <strong>静态托管</strong>
+          </div>
+          <div>
+            <span>访问权限</span>
+            <strong>公开访问</strong>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="metric-grid" aria-label="价格概览">
+        <article class="metric">
+          <span>收录模型</span>
+          <strong id="modelCount">-</strong>
+        </article>
+        <article class="metric">
+          <span>供应商/平台</span>
+          <strong id="providerCount">-</strong>
+        </article>
+        <article class="metric">
+          <span>最低输入价</span>
+          <strong id="cheapestInput">-</strong>
+        </article>
+        <article class="metric">
+          <span>最低输出价</span>
+          <strong id="cheapestOutput">-</strong>
+        </article>
+      </section>
+
+      <section class="dashboard">
+        <aside class="controls" aria-label="筛选器">
+          <div class="section-title compact">
+            <h2>筛选</h2>
+            <span id="resultCount">-</span>
+          </div>
+          <label>
+            搜索
+            <input id="searchInput" type="search" placeholder="模型、厂商、平台">
+          </label>
+          <label>
+            厂商
+            <select id="providerFilter"></select>
+          </label>
+          <label>
+            平台
+            <select id="platformFilter"></select>
+          </label>
+          <label>
+            类型
+            <select id="categoryFilter"></select>
+          </label>
+          <label>
+            排序
+            <select id="sortSelect">
+              <option value="total">估算总成本</option>
+              <option value="input">输入价</option>
+              <option value="output">输出价</option>
+              <option value="provider">厂商名称</option>
+            </select>
+          </label>
+        </aside>
+
+        <section id="calculator" class="calculator">
+          <div class="section-title">
+            <h2>费用估算器</h2>
+            <span id="rateNote">-</span>
+          </div>
+          <div class="calc-grid">
+            <label>
+              输入 tokens
+              <input id="inputTokens" type="number" min="0" step="1000" value="1000000">
+            </label>
+            <label>
+              输出 tokens
+              <input id="outputTokens" type="number" min="0" step="1000" value="200000">
+            </label>
+            <label>
+              缓存命中率
+              <input id="cacheRate" type="range" min="0" max="100" step="5" value="0">
+              <span id="cacheRateText">0%</span>
+            </label>
+            <label>
+              计价货币
+              <select id="currencySelect">
+                <option value="CNY">人民币</option>
+                <option value="USD">美元</option>
+              </select>
+            </label>
+          </div>
+          <div id="bestList" class="best-list" aria-label="最低成本模型"></div>
+        </section>
+      </section>
+
+      <section class="table-panel">
+        <div class="section-title">
+          <h2>模型价格</h2>
+          <span>价格统一换算为每百万 tokens</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>模型</th>
+                <th>厂商/平台</th>
+                <th>条件</th>
+                <th>输入</th>
+                <th>输出</th>
+                <th>缓存</th>
+                <th>估算</th>
+                <th>状态</th>
+                <th>来源</th>
+              </tr>
+            </thead>
+            <tbody id="priceRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="two-column">
+        <section class="info-section">
+          <div class="section-title">
+            <h2>套餐</h2>
+            <span>按官方说明收录</span>
+          </div>
+          <div id="plans" class="plans"></div>
+        </section>
+        <section class="info-section">
+          <div class="section-title">
+            <h2>自动化</h2>
+            <span>北京时间</span>
+          </div>
+          <ul id="schedule" class="schedule"></ul>
+          <div class="notes">
+            <p>建议生产环境把采集结果先写入审核队列，页面结构变化或价格异常波动时人工确认后再发布。</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="data/prices.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
