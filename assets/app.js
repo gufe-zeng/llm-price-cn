@@ -21,6 +21,9 @@
     bestList: document.getElementById("bestList"),
     priceRows: document.getElementById("priceRows"),
     resultCount: document.getElementById("resultCount"),
+    coverage: document.getElementById("coverage"),
+    unitRows: document.getElementById("unitRows"),
+    unitCount: document.getElementById("unitCount"),
     plans: document.getElementById("plans"),
     schedule: document.getElementById("schedule")
   };
@@ -130,7 +133,7 @@
 
   function renderSummary(records) {
     const providers = unique(data.records.map((record) => `${record.provider} / ${record.platform}`));
-    const reviewCount = data.records.filter((record) => record.confidence === "needs-review").length;
+    const reviewCount = (data.coverage || []).filter((item) => !String(item.status).includes("complete")).length;
     const cheapestInput = data.records
       .filter((record) => effectiveInputCny(record) != null)
       .sort((a, b) => effectiveInputCny(a) - effectiveInputCny(b))[0];
@@ -140,7 +143,7 @@
 
     els.modelCount.textContent = data.records.length;
     els.providerCount.textContent = providers.length;
-    els.reviewCount.textContent = `${reviewCount} 条需人工复核`;
+    els.reviewCount.textContent = `${reviewCount} 个来源需继续补解析`;
     els.cheapestInput.textContent = cheapestInput ? `${perMillion(cheapestInput, "input")}/M` : "-";
     els.cheapestOutput.textContent = cheapestOutput ? `${perMillion(cheapestOutput, "output")}/M` : "-";
     els.resultCount.textContent = `${records.length} 条结果`;
@@ -187,6 +190,45 @@
             <td><strong>${estimate}</strong></td>
             <td><span class="status ${statusClass(record)}">${record.status || "已收录"}</span></td>
             <td>${source}</td>
+          </tr>
+        `;
+      })
+      .join("");
+  }
+
+  function renderCoverage() {
+    const coverage = data.coverage || [];
+    els.coverage.innerHTML = coverage
+      .map((item) => {
+        const ok = String(item.status).includes("complete");
+        const cls = ok ? "active" : "review";
+        const source = item.sourceUrl ? `<a class="source-link" href="${item.sourceUrl}" target="_blank" rel="noreferrer">来源</a>` : "";
+        return `
+          <article class="coverage-card">
+            <strong>${item.provider}</strong>
+            <div class="coverage-meta">
+              <span class="status ${cls}">${item.status}</span>
+              <span class="tag">Token ${item.tokenRows || 0}</span>
+              <span class="tag">单项 ${item.unitRows || 0}</span>
+              ${source}
+            </div>
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  function renderUnitRows() {
+    const rows = data.unitRecords || [];
+    els.unitCount.textContent = `${rows.length} 条`;
+    els.unitRows.innerHTML = rows
+      .map((row) => {
+        const price = row.price == null ? row.unit : `${row.currency === "USD" ? "$" : "¥"}${row.price} ${row.unit}`;
+        return `
+          <tr>
+            <td><strong>${row.model}</strong><br><span class="subtle">${row.provider} / ${row.platform}</span></td>
+            <td>${row.service}</td>
+            <td>${price}</td>
           </tr>
         `;
       })
@@ -250,6 +292,8 @@
     optionList(els.categoryFilter, unique(data.records.map((record) => record.category)), "全部类型");
     renderPlans();
     renderSchedule();
+    renderCoverage();
+    renderUnitRows();
     bind();
     render();
   }
