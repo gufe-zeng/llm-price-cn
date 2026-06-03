@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-06-03T02:07:17+08:00",
+  "generatedAt": "2026-06-04T01:26:12+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -998,10 +998,10 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
-      "id": "api-minimax-m2-5-2-1-8-4-none-200a5f2debb2",
+      "id": "api-minimax-m2-5-2-1-8-4-none-bd19cdbeab75",
       "provider": "百度千帆",
       "platform": "官方 API - 在线推理",
-      "model": "MiniMax-M2.5",
+      "model": "MiniMax-M2.5(即将下线)",
       "category": "MiniMax-M2.5",
       "currency": "CNY",
       "input": 2.1,
