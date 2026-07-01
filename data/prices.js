@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-06-25T16:19:57+08:00",
+  "generatedAt": "2026-07-02T04:22:20+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -13,7 +13,7 @@ window.PRICE_DATA = {
     },
     {
       "provider": "<lambda>",
-      "status": "ERROR: single positional indexer is out-of-bounds",
+      "status": "ERROR: HTTP Error 504: Gateway Time-out",
       "tokenRows": 0,
       "unitRows": 0
     },
