@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-07-15T06:31:42+08:00",
+  "generatedAt": "2026-07-16T23:54:02+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -38,7 +38,7 @@ window.PRICE_DATA = {
     {
       "provider": "月之暗面 Kimi",
       "status": "homepage-current-models",
-      "tokenRows": 2,
+      "tokenRows": 1,
       "unitRows": 0
     },
     {
@@ -105,26 +105,6 @@ window.PRICE_DATA = {
         "缓存"
       ],
       "confidence": "official-table"
-    },
-    {
-      "id": "kimi-api-kimi-k2-5-4-0-21-0-none-d277f7ecc68d",
-      "provider": "月之暗面 Kimi",
-      "platform": "官方 API",
-      "model": "kimi-k2.5",
-      "category": "文本/视觉/推理",
-      "currency": "CNY",
-      "input": 4.0,
-      "output": 21.0,
-      "condition": "官方首页最新模型价格",
-      "context": "256K",
-      "status": "官方收录",
-      "sourceUrl": "https://platform.kimi.com/",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "缓存"
-      ],
-      "confidence": "official-homepage"
     },
     {
       "id": "kimi-api-kimi-k2-6-6-5-27-0-none-442038935fc1",
