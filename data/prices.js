@@ -1,14 +1,14 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-07-23T03:51:43+08:00",
+  "generatedAt": "2026-07-23T05:05:57+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
   },
   "coverage": [
     {
-      "provider": "<lambda>",
-      "status": "ERROR: index 2 is out of bounds for axis 0 with size 2",
-      "tokenRows": 0,
+      "provider": "DeepSeek",
+      "status": "complete",
+      "tokenRows": 2,
       "unitRows": 0
     },
     {
@@ -36,9 +36,9 @@ window.PRICE_DATA = {
       "unitRows": 7
     },
     {
-      "provider": "月之暗面 Kimi",
-      "status": "homepage-current-models",
-      "tokenRows": 1,
+      "provider": "<lambda>",
+      "status": "ERROR: The read operation timed out",
+      "tokenRows": 0,
       "unitRows": 0
     },
     {
@@ -65,24 +65,46 @@ window.PRICE_DATA = {
   ],
   "records": [
     {
-      "id": "kimi-api-kimi-k2-6-6-5-27-0-none-442038935fc1",
-      "provider": "月之暗面 Kimi",
+      "id": "deepseek-api-deepseek-v4-flash-openai-anthropic--2eaa1d6ef9b3",
+      "provider": "DeepSeek",
       "platform": "官方 API",
-      "model": "kimi-k2.6",
-      "category": "文本/视觉/推理",
-      "currency": "CNY",
-      "input": 6.5,
-      "output": 27.0,
-      "condition": "官方首页最新模型价格",
-      "context": "256K",
+      "model": "deepseek-v4-flash",
+      "category": "文本/推理",
+      "currency": "USD",
+      "input": 0.14,
+      "output": 0.28,
+      "cacheHit": 0.0028,
+      "condition": "官方 OpenAI/Anthropic 兼容 API",
+      "context": "1M context",
       "status": "官方收录",
-      "sourceUrl": "https://platform.kimi.com/",
+      "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
       "notes": "",
       "tags": [
         "官方 API",
         "缓存"
       ],
-      "confidence": "official-homepage"
+      "confidence": "official-table"
+    },
+    {
+      "id": "deepseek-api-deepseek-v4-pro-openai-anthropic-ap-d4a0ca5e7854",
+      "provider": "DeepSeek",
+      "platform": "官方 API",
+      "model": "deepseek-v4-pro",
+      "category": "文本/推理",
+      "currency": "USD",
+      "input": 0.435,
+      "output": 0.87,
+      "cacheHit": 0.003625,
+      "condition": "官方 OpenAI/Anthropic 兼容 API",
+      "context": "1M context",
+      "status": "官方收录",
+      "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+      "notes": "75% off price shown first on the official table; original prices remain in the source cell.",
+      "tags": [
+        "官方 API",
+        "缓存"
+      ],
+      "confidence": "official-table"
     },
     {
       "id": "tokenhub-api-deepseek-v4-flash-1-2-0-2-9b7cc2be0485",
