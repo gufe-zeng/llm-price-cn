@@ -1,14 +1,14 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-08-11T16:09:45+08:00",
+  "generatedAt": "2026-08-11T17:29:07+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
   },
   "coverage": [
     {
-      "provider": "<lambda>",
-      "status": "ERROR: index 2 is out of bounds for axis 0 with size 2",
-      "tokenRows": 0,
+      "provider": "DeepSeek",
+      "status": "complete",
+      "tokenRows": 2,
       "unitRows": 0
     },
     {
@@ -64,6 +64,46 @@ window.PRICE_DATA = {
     }
   ],
   "records": [
+    {
+      "id": "deepseek-api-deepseek-v4-flash-openai-anthropic--13dd62d26dc7",
+      "provider": "DeepSeek",
+      "platform": "官方 API",
+      "model": "deepseek-v4-flash",
+      "category": "文本/推理",
+      "currency": "USD",
+      "input": null,
+      "output": 0.0028,
+      "condition": "官方 OpenAI/Anthropic 兼容 API",
+      "context": "1M context",
+      "status": "官方收录",
+      "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+      "notes": "",
+      "tags": [
+        "官方 API",
+        "缓存"
+      ],
+      "confidence": "official-table"
+    },
+    {
+      "id": "deepseek-api-deepseek-v4-pro-openai-anthropic-ap-ffb5e00dd1e9",
+      "provider": "DeepSeek",
+      "platform": "官方 API",
+      "model": "deepseek-v4-pro",
+      "category": "文本/推理",
+      "currency": "USD",
+      "input": null,
+      "output": 0.003625,
+      "condition": "官方 OpenAI/Anthropic 兼容 API",
+      "context": "1M context",
+      "status": "官方收录",
+      "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
+      "notes": "75% off price shown first on the official table; original prices remain in the source cell.",
+      "tags": [
+        "官方 API",
+        "缓存"
+      ],
+      "confidence": "official-table"
+    },
     {
       "id": "kimi-api-kimi-k2-6-6-5-27-0-none-442038935fc1",
       "provider": "月之暗面 Kimi",
