@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-08-14T14:54:03+08:00",
+  "generatedAt": "2026-08-17T00:17:48+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -65,16 +65,16 @@ window.PRICE_DATA = {
   ],
   "records": [
     {
-      "id": "deepseek-api-deepseek-v4-flash-openai-anthropic--13dd62d26dc7",
+      "id": "deepseek-api-model-openai-anthropic-api-none-non-8ccd2c8f1843",
       "provider": "DeepSeek",
       "platform": "官方 API",
-      "model": "deepseek-v4-flash",
+      "model": "MODEL",
       "category": "文本/推理",
       "currency": "USD",
       "input": null,
-      "output": 0.0028,
+      "output": null,
       "condition": "官方 OpenAI/Anthropic 兼容 API",
-      "context": "1M context",
+      "context": "CONTEXT LENGTH context",
       "status": "官方收录",
       "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
       "notes": "",
@@ -85,19 +85,19 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
-      "id": "deepseek-api-deepseek-v4-pro-openai-anthropic-ap-ffb5e00dd1e9",
+      "id": "deepseek-api-deepseek-v4-flash-openai-anthropic--56810baa9332",
       "provider": "DeepSeek",
       "platform": "官方 API",
-      "model": "deepseek-v4-pro",
+      "model": "deepseek-v4-flash",
       "category": "文本/推理",
       "currency": "USD",
       "input": null,
-      "output": 0.003625,
+      "output": 0.007,
       "condition": "官方 OpenAI/Anthropic 兼容 API",
       "context": "1M context",
       "status": "官方收录",
       "sourceUrl": "https://api-docs.deepseek.com/quick_start/pricing",
-      "notes": "75% off price shown first on the official table; original prices remain in the source cell.",
+      "notes": "",
       "tags": [
         "官方 API",
         "缓存"
