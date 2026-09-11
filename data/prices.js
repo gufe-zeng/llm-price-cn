@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-09-10T14:16:50+08:00",
+  "generatedAt": "2026-09-12T07:54:08+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -13,7 +13,7 @@ window.PRICE_DATA = {
     },
     {
       "provider": "<lambda>",
-      "status": "ERROR: single positional indexer is out-of-bounds",
+      "status": "ERROR: <urlopen error [Errno 104] Connection reset by peer>",
       "tokenRows": 0,
       "unitRows": 0
     },
