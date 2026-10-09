@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-10-09T00:44:01+08:00",
+  "generatedAt": "2026-10-09T16:22:20+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -26,7 +26,7 @@ window.PRICE_DATA = {
     {
       "provider": "百度千帆",
       "status": "complete-machine-readable",
-      "tokenRows": 56,
+      "tokenRows": 57,
       "unitRows": 0
     },
     {
@@ -646,6 +646,27 @@ window.PRICE_DATA = {
       "input": 8.0,
       "output": 28.0,
       "cacheHit": 2.0,
+      "condition": "无阶梯计价",
+      "context": "",
+      "status": "官方收录",
+      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "notes": "",
+      "tags": [
+        "官方 API",
+        "官方表格全量"
+      ],
+      "confidence": "official-table"
+    },
+    {
+      "id": "api-glm-5-2-fast-16-0-56-0-4-0-218a47005bf4",
+      "provider": "百度千帆",
+      "platform": "官方 API - 在线推理",
+      "model": "GLM-5.2-Fast",
+      "category": "GLM-5.2-Fast",
+      "currency": "CNY",
+      "input": 16.0,
+      "output": 56.0,
+      "cacheHit": 4.0,
       "condition": "无阶梯计价",
       "context": "",
       "status": "官方收录",
