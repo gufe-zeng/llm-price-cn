@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-10-18T02:41:12+08:00",
+  "generatedAt": "2026-10-18T19:30:48+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -145,15 +145,15 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
-      "id": "api-deepseek-v4-flash-0731-22-00-8-00-none-4-5-0-490f4e8f3b7b",
+      "id": "api-deepseek-v4-pro-0813-22-00-8-00-none-13-5-0--b3089cfcc36d",
       "provider": "百度千帆",
       "platform": "官方 API - 在线推理",
-      "model": "DeepSeek-V4-Flash-0731",
-      "category": "DeepSeek-V4-Flash-0731（命中缓存限时价格生效日期：9月9日-10月30日）",
+      "model": "DeepSeek-V4-Pro-0813",
+      "category": "DeepSeek-V4-Pro（命中缓存限时价格生效日期：9月9日-10月30日）",
       "currency": "CNY",
       "input": null,
-      "output": 4.5,
-      "cacheHit": 0.05,
+      "output": 13.5,
+      "cacheHit": 0.15,
       "condition": "空闲时段：22:00-次日8:00",
       "context": "",
       "status": "官方收录",
@@ -166,15 +166,15 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
-      "id": "api-deepseek-v4-flash-0731-8-00-22-00-none-9-0-0-b47126be3414",
+      "id": "api-deepseek-v4-pro-0813-8-00-22-00-none-27-0-0--6c1c9d652494",
       "provider": "百度千帆",
       "platform": "官方 API - 在线推理",
-      "model": "DeepSeek-V4-Flash-0731",
-      "category": "DeepSeek-V4-Flash-0731（命中缓存限时价格生效日期：9月9日-10月30日）",
+      "model": "DeepSeek-V4-Pro-0813",
+      "category": "DeepSeek-V4-Pro（命中缓存限时价格生效日期：9月9日-10月30日）",
       "currency": "CNY",
       "input": null,
-      "output": 9.0,
-      "cacheHit": 0.1,
+      "output": 27.0,
+      "cacheHit": 0.3,
       "condition": "高峰时段：8:00-22:00",
       "context": "",
       "status": "官方收录",
@@ -187,13 +187,13 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
-      "id": "api-deepseek-v4-pro-12-0-24-0-1-0-863bea4b2be2",
+      "id": "api-deepseek-v4-pro-none-24-0-1-0-09fd97dc7793",
       "provider": "百度千帆",
       "platform": "官方 API - 在线推理",
-      "model": "DeepSeek-V4-Pro",
+      "model": "DeepSeek-V4-Pro）",
       "category": "DeepSeek-V4-Pro",
       "currency": "CNY",
-      "input": 12.0,
+      "input": null,
       "output": 24.0,
       "cacheHit": 1.0,
       "condition": "无阶梯计价",
@@ -208,10 +208,10 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
-      "id": "api-deepseek-v4-1-flash-22-00-8-00-none-4-0-0-02-5c7b62ce02bf",
+      "id": "api-deepseek-v4-1-flash-1017-22-00-8-00-none-4-0-fe5350fbabe1",
       "provider": "百度千帆",
       "platform": "官方 API - 在线推理",
-      "model": "DeepSeek-V4.1-Flash",
+      "model": "DeepSeek-V4.1-Flash-1017",
       "category": "DeepSeek-V4.1-Flash",
       "currency": "CNY",
       "input": null,
@@ -229,10 +229,10 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
-      "id": "api-deepseek-v4-1-flash-8-00-22-00-2-0-8-0-0-04-30fef45cace2",
+      "id": "api-deepseek-v4-1-flash-1017-8-00-22-00-2-0-8-0--514e9531f838",
       "provider": "百度千帆",
       "platform": "官方 API - 在线推理",
-      "model": "DeepSeek-V4.1-Flash",
+      "model": "DeepSeek-V4.1-Flash-1017",
       "category": "DeepSeek-V4.1-Flash",
       "currency": "CNY",
       "input": 2.0,
@@ -700,13 +700,13 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
-      "id": "api-glm-5-3-flash-0-8-2-8-0-23-a771184918e8",
+      "id": "api-glm-5-3-flash-none-2-8-0-23-8b033077c976",
       "provider": "百度千帆",
       "platform": "官方 API - 在线推理",
       "model": "GLM-5.3-Flash",
       "category": "GLM-5.3-Flash",
       "currency": "CNY",
-      "input": 0.8,
+      "input": null,
       "output": 2.8,
       "cacheHit": 0.23,
       "condition": "无阶梯计价",
