@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-10-27T08:39:28+08:00",
+  "generatedAt": "2026-10-30T05:16:52+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -26,7 +26,7 @@ window.PRICE_DATA = {
     {
       "provider": "百度千帆",
       "status": "complete-machine-readable",
-      "tokenRows": 57,
+      "tokenRows": 39,
       "unitRows": 0
     },
     {
@@ -148,6 +148,48 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
+      "id": "api-deepseek-v4-1-flash-22-00-8-00-none-4-0-2000-603acbd3c019",
+      "provider": "百度千帆",
+      "platform": "官方 API - 在线推理",
+      "model": "DeepSeek-V4.1-Flash",
+      "category": "DeepSeek-V4.1-Flash",
+      "currency": "CNY",
+      "input": null,
+      "output": 4.0,
+      "cacheHit": 2000.0,
+      "condition": "空闲时段：22:00-次日8:00",
+      "context": "",
+      "status": "官方收录",
+      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "notes": "",
+      "tags": [
+        "官方 API",
+        "官方表格全量"
+      ],
+      "confidence": "official-table"
+    },
+    {
+      "id": "api-deepseek-v4-1-flash-8-00-22-00-2-0-8-0-4000--cf229cae46d3",
+      "provider": "百度千帆",
+      "platform": "官方 API - 在线推理",
+      "model": "DeepSeek-V4.1-Flash",
+      "category": "DeepSeek-V4.1-Flash",
+      "currency": "CNY",
+      "input": 2.0,
+      "output": 8.0,
+      "cacheHit": 4000.0,
+      "condition": "高峰时段：8:00-22:00",
+      "context": "",
+      "status": "官方收录",
+      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "notes": "",
+      "tags": [
+        "官方 API",
+        "官方表格全量"
+      ],
+      "confidence": "official-table"
+    },
+    {
       "id": "api-deepseek-v4-1-flash-1017-22-00-8-00-none-4-0-fe5350fbabe1",
       "provider": "百度千帆",
       "platform": "官方 API - 在线推理",
@@ -190,271 +232,6 @@ window.PRICE_DATA = {
       "confidence": "official-table"
     },
     {
-      "id": "api-ernie-4-5-turbo-128k-preview-0-8-3-2-0-2-2e40441b4bc8",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-4.5-Turbo-128K-Preview",
-      "category": "ERNIE 4.5 Turbo",
-      "currency": "CNY",
-      "input": 0.8,
-      "output": 3.2,
-      "cacheHit": 0.2,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-4-5-turbo-20260402-0-8-3-2-0-2-d5d90ad7591b",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-4.5-Turbo-20260402",
-      "category": "ERNIE 4.5 Turbo",
-      "currency": "CNY",
-      "input": 0.8,
-      "output": 3.2,
-      "cacheHit": 0.2,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-4-5-turbo-32k-0-8-3-2-0-2-c3ca691b071d",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-4.5-Turbo-32K",
-      "category": "ERNIE 4.5 Turbo",
-      "currency": "CNY",
-      "input": 0.8,
-      "output": 3.2,
-      "cacheHit": 0.2,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-4-5-turbo-vl-3-0-9-0-0-75-459d622e272a",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-4.5-Turbo-VL",
-      "category": "ERNIE 4.5 Turbo VL",
-      "currency": "CNY",
-      "input": 3.0,
-      "output": 9.0,
-      "cacheHit": 0.75,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-4-5-turbo-vl-32k-3-0-9-0-0-75-b291a49c0ef8",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-4.5-Turbo-VL-32K",
-      "category": "ERNIE 4.5 Turbo VL",
-      "currency": "CNY",
-      "input": 3.0,
-      "output": 9.0,
-      "cacheHit": 0.75,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-5-0-32k-128k-40-0-none-none-8991792d6318",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-5.0",
-      "category": "ERNIE 5.0",
-      "currency": "CNY",
-      "input": 40.0,
-      "output": null,
-      "condition": "32k<输入=<128k",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-5-0-32k-24-0-none-none-0ad26ae1dac9",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-5.0",
-      "category": "ERNIE 5.0",
-      "currency": "CNY",
-      "input": 24.0,
-      "output": null,
-      "condition": "输入=<32k",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-5-0-thinking-exp-32k-128k-40-0-none-no-50d7a5f10cc2",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-5.0-Thinking-Exp",
-      "category": "ERNIE 5.0",
-      "currency": "CNY",
-      "input": 40.0,
-      "output": null,
-      "condition": "32k<输入=<128k",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-5-0-thinking-exp-32k-24-0-none-none-06a84af67db9",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-5.0-Thinking-Exp",
-      "category": "ERNIE 5.0",
-      "currency": "CNY",
-      "input": 24.0,
-      "output": null,
-      "condition": "输入=<32k",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-5-0-thinking-latest-32k-128k-40-0-none-7247e87d456e",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-5.0-Thinking-Latest",
-      "category": "ERNIE 5.0",
-      "currency": "CNY",
-      "input": 40.0,
-      "output": null,
-      "condition": "32k<输入=<128k",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-5-0-thinking-latest-32k-24-0-none-none-00e0b6de66aa",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-5.0-Thinking-Latest",
-      "category": "ERNIE 5.0",
-      "currency": "CNY",
-      "input": 24.0,
-      "output": null,
-      "condition": "输入=<32k",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-5-0-thinking-preview-32k-128k-40-0-non-6624c4d0cc8d",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-5.0-Thinking-Preview",
-      "category": "ERNIE 5.0",
-      "currency": "CNY",
-      "input": 40.0,
-      "output": null,
-      "condition": "32k<输入=<128k",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-5-0-thinking-preview-32k-24-0-none-non-039b6141646f",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-5.0-Thinking-Preview",
-      "category": "ERNIE 5.0",
-      "currency": "CNY",
-      "input": 24.0,
-      "output": null,
-      "condition": "输入=<32k",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
       "id": "api-ernie-5-1-32k-128k-22-0-none-none-c179105be286",
       "provider": "百度千帆",
       "platform": "官方 API - 在线推理",
@@ -484,26 +261,6 @@ window.PRICE_DATA = {
       "input": 18.0,
       "output": null,
       "condition": "输入<=32k",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-x1-1-preview-1-0-4-0-none-2177fbb231ec",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "ERNIE-X1.1-Preview（即将下线）",
-      "category": "ERNIE X1.1",
-      "currency": "CNY",
-      "input": 1.0,
-      "output": 4.0,
-      "condition": "无阶梯计价",
       "context": "",
       "status": "官方收录",
       "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
@@ -692,26 +449,6 @@ window.PRICE_DATA = {
       "output": 22.0,
       "cacheHit": 1.5,
       "condition": "输入Token数：（32k，200k]",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-internvl3-38b-8-0-24-0-none-eb1d6e24ddfc",
-      "provider": "百度千帆",
-      "platform": "官方 API - 在线推理",
-      "model": "InternVL3-38B",
-      "category": "InternVL3",
-      "currency": "CNY",
-      "input": 8.0,
-      "output": 24.0,
-      "condition": "无阶梯计价",
       "context": "",
       "status": "官方收录",
       "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
@@ -1112,106 +849,6 @@ window.PRICE_DATA = {
       "currency": "CNY",
       "input": 0.5,
       "output": null,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-4-5-turbo-128k-preview-0-32-1-28-none-d96462da4d38",
-      "provider": "百度千帆",
-      "platform": "官方 API - 批量推理",
-      "model": "ERNIE-4.5-Turbo-128K-Preview",
-      "category": "ERNIE 4.5 Turbo",
-      "currency": "CNY",
-      "input": 0.32,
-      "output": 1.28,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-4-5-turbo-32k-0-32-1-28-none-0280a5dd0036",
-      "provider": "百度千帆",
-      "platform": "官方 API - 批量推理",
-      "model": "ERNIE-4.5-Turbo-32K",
-      "category": "ERNIE 4.5 Turbo",
-      "currency": "CNY",
-      "input": 0.32,
-      "output": 1.28,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-4-5-turbo-vl-1-2-3-6-none-80584371dc5b",
-      "provider": "百度千帆",
-      "platform": "官方 API - 批量推理",
-      "model": "ERNIE-4.5-Turbo-VL",
-      "category": "ERNIE 4.5 Turbo VL",
-      "currency": "CNY",
-      "input": 1.2,
-      "output": 3.6,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-ernie-4-5-turbo-vl-32k-1-2-3-6-none-36d98f420dbc",
-      "provider": "百度千帆",
-      "platform": "官方 API - 批量推理",
-      "model": "ERNIE-4.5-Turbo-VL-32K",
-      "category": "ERNIE 4.5 Turbo VL",
-      "currency": "CNY",
-      "input": 1.2,
-      "output": 3.6,
-      "condition": "无阶梯计价",
-      "context": "",
-      "status": "官方收录",
-      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
-      "notes": "",
-      "tags": [
-        "官方 API",
-        "官方表格全量"
-      ],
-      "confidence": "official-table"
-    },
-    {
-      "id": "api-internvl3-38b-3-2-9-6-none-916a3bd7a81a",
-      "provider": "百度千帆",
-      "platform": "官方 API - 批量推理",
-      "model": "InternVL3-38B",
-      "category": "InternVL3",
-      "currency": "CNY",
-      "input": 3.2,
-      "output": 9.6,
       "condition": "无阶梯计价",
       "context": "",
       "status": "官方收录",
