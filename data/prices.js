@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-11-10T07:04:14+08:00",
+  "generatedAt": "2026-11-11T04:31:22+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -26,7 +26,7 @@ window.PRICE_DATA = {
     {
       "provider": "百度千帆",
       "status": "complete-machine-readable",
-      "tokenRows": 39,
+      "tokenRows": 41,
       "unitRows": 0
     },
     {
@@ -301,6 +301,48 @@ window.PRICE_DATA = {
       "input": 18.0,
       "output": null,
       "condition": "输入<=32k",
+      "context": "",
+      "status": "官方收录",
+      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "notes": "",
+      "tags": [
+        "官方 API",
+        "官方表格全量"
+      ],
+      "confidence": "official-table"
+    },
+    {
+      "id": "api-ernie-5-5-flash-preview-22-00-8-00-0-5-2-0-0-19ae6c677608",
+      "provider": "百度千帆",
+      "platform": "官方 API - 在线推理",
+      "model": "ERNIE-5.5-Flash-Preview",
+      "category": "ERNIE-5.5-Flash",
+      "currency": "CNY",
+      "input": 0.5,
+      "output": 2.0,
+      "cacheHit": 0.05,
+      "condition": "空闲时段：22:00-次日8:00",
+      "context": "",
+      "status": "官方收录",
+      "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+      "notes": "",
+      "tags": [
+        "官方 API",
+        "官方表格全量"
+      ],
+      "confidence": "official-table"
+    },
+    {
+      "id": "api-ernie-5-5-flash-preview-8-00-22-00-1-0-4-0-0-a40285191cde",
+      "provider": "百度千帆",
+      "platform": "官方 API - 在线推理",
+      "model": "ERNIE-5.5-Flash-Preview",
+      "category": "ERNIE-5.5-Flash",
+      "currency": "CNY",
+      "input": 1.0,
+      "output": 4.0,
+      "cacheHit": 0.1,
+      "condition": "高峰时段：8:00-22:00",
       "context": "",
       "status": "官方收录",
       "sourceUrl": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
