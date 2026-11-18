@@ -1,5 +1,5 @@
 window.PRICE_DATA = {
-  "generatedAt": "2026-11-18T12:00:36+08:00",
+  "generatedAt": "2026-11-18T20:53:32+08:00",
   "currencyRates": {
     "USD_CNY": 7.12,
     "note": "用于页面横向估算，最终以官方结算货币为准"
@@ -36,8 +36,8 @@ window.PRICE_DATA = {
       "unitRows": 7
     },
     {
-      "provider": "<lambda>",
-      "status": "ERROR: <urlopen error _ssl.c:994: The handshake operation timed out>",
+      "provider": "月之暗面 Kimi",
+      "status": "homepage-current-models",
       "tokenRows": 0,
       "unitRows": 0
     },
